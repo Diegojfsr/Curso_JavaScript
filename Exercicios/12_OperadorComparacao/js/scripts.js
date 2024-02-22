@@ -1,0 +1,40 @@
+
+// Operadores Comparação.
+
+var idade = 18;
+
+if(idade>=18){
+    console.log("Usuario pode fazer a carteira.")
+}
+
+var idade = 15;
+if(idade<=17){
+    console.log("Usuario NÃO pode fazer a carteira.")
+}
+
+var possuiCarro = 1; // 0=>false | 1=>true
+var idade = 18;
+if(possuiCarro){
+    console.log("Usuario pode andar de carro.")
+}
+
+var nome = "Mateus";
+if(nome=="Mateus"){
+    console.log("Seu nome é Mateus")
+}
+
+var nome = "Pedro";
+if(nome!="Mateus"){
+    console.log("O nome não é Mateus.")
+}
+
+if(20>10){
+    console.log("Passou1");
+}
+if(10<20){
+    console.log("Passou2");
+}
+if(5<10){
+    console.log("Passou3");
+}
+
