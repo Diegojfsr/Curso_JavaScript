@@ -3,7 +3,7 @@
 // Alterar conteúdo do elemento (textContent e innerHTML)
 
 
-
+// innerHTML
 var title = document.querySelector("#title");
 console.log(title);
 
