@@ -1,0 +1,8 @@
+
+O que é DOM? (Document Object Model)
+
+- Document Object Model.
+- Uma interface de programacao para Html.
+- Por meio dele temos métodos para acessar a árvore de elementos.
+- O DOM fornece uma cópia de html.
+- Podemos manipular eventos pelo DOM para afetar o Html.
