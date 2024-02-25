@@ -1,0 +1,21 @@
+
+// Funções de Array PARTE 2
+
+// splaice - adiciona ou remove elementos especificos no meio do array
+
+var arr = [1, 2, 3, 4, 5];
+arr.splice(2, 0, 999); // add elemento 999 no indice 2 sem apagar elementos
+console.log(arr);
+arr.splice(4, 1); // del 1 elemento no indice 4
+console.log(arr);
+
+// indexOF - acha o indice do elemento
+console.log(arr.indexOf(5)); //acha indice do elemento 5
+
+// join - transforma arrays em strings
+var arr2 = ["O", "rato", "roel", "a", "roupa"];
+console.log(arr2.join(", "));
+
+// inverte a ordem dos elementos do array
+console.log(arr2.reverse());
+
