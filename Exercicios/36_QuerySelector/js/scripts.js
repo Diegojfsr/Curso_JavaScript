@@ -1,4 +1,5 @@
 
+
 // querySelector e querySelectorAll
 var itensClasse = document.getElementsByClassName("item");
 console.log(itensClasse);
@@ -22,5 +23,6 @@ var span = document.querySelector("#paragrafo span");
 console.log(span);
 var span = document.querySelectorAll("#paragrafo span")[0];
 console.log(span);
+
 
 
