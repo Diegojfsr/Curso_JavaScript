@@ -1,0 +1,41 @@
+Funções de string PARTE 2
+
+- Os métodos de string também auxiliam na sua modificação.
+- Podemos por exemplo deixar a fonte em caixa alta ou baixa com JavaScript.
+- Vamos ver na prática!
+
+
+// toLowerCase e toUpperCase
+
+var frase = "Esta é a frase que vamos manipular";
+
+var fraseCaixaAlta = frase.toUpperCase();
+
+console.log(fraseCaixaAlta);
+console.log(frase.toLowerCase());
+console.log(fraseCaixaAlta.toLowerCase());
+
+
+// trim - retira espaço vazios de strings
+
+var nome = "   Mateus   ";
+var nomeTrim = nome.trim();
+console.log(nome);
+console.log(nomeTrim);
+
+
+// sprit
+
+console.log(frase.split("")); // separa letra por letra
+console.log(frase.split(" ")); // separa palavra por palavra
+
+var tags = "PHP, JavaScript, Html, Css";
+console.log(tags.split(", ")); // separa as palavras com virgula
+
+// lastIndexOf
+
+var fraseDois = "Eu quero a ultima palavra teste desta frase de teste";
+console.log(fraseDois.indexOf("teste")); // primeira paravra teste achada
+console.log(fraseDois.lastIndexOf("teste")); // utima paravra teste achada
+
+

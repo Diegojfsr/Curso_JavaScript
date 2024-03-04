@@ -1,0 +1,67 @@
+Trocando elementos (replaceChild)
+
+-Podemos tmbém trocar um elemento no DOM.
+- Podemos substituir uma tag por outra e de modo bem fácil.
+- Vamos ver na prática!
+
+
+// criar elemento
+var el = document.createElement("h3");
+el.classList = "testando-classe";
+
+var texto = document.createTextNode("Este é o nosso tesxto do h3")
+el.appendChild(texto);
+console.log(el);
+
+// selecionar o elemento que quero trocar
+var title = document.querySelector("#title");
+console.log(title);
+
+// selecionar o pai do el
+var pai = title.parentNode;
+
+// trocar os elementos
+pai.replaceChild(el, title);
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trocando elementos (replaceChild) </title>
+</head>
+<body>
+
+    <h1 id="title"> Titulo Principal </h1>
+    <h2 class="subtitle"> Este é o segundo titulo</h2>
+
+    <p id="paragrafo"> Este é o paragráfo! <span>teste</span></p>
+
+    <ul id="lista">
+        <li class="item"> Item 1 </li>
+        <li class="item"> Item 2 </li>
+        <li class="item"> Item 3 </li>
+        <li class="item"> Item 4 </li>
+    </ul>
+    <ul id="lista2">
+        <li class="item"> Item 5 </li>
+        <li class="item"> Item 6 </li>
+        <li class="item"> Item 7 </li>
+        <li class="item"> Item 8 </li>
+    </ul>
+
+    <div id="container">
+        <p>Testando</p>
+    </div>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+

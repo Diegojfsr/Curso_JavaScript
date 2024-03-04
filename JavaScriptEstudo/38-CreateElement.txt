@@ -1,0 +1,67 @@
+Criando elementos com DOM (createElement)
+
+- Outra possibilidade do JS e o DOM é criar elementos.
+- O texto de um elemento é considerado um nó na árvore do DOM.
+- Ou seja, temos que criar o texto do elemento também.
+- Vamos ver na prática! 
+
+
+
+// inserir o elemento no body
+var novoParagrafo = document.createElement("p");
+console.log(novoParagrafo);
+
+var texto = document.createTextNode("Este é o conteúdo do paragráfo.");
+novoParagrafo.appendChild(texto);
+
+var body = document.querySelector("body");
+console.log(body);
+body.appendChild(novoParagrafo);
+
+// inserir em um container
+var container = document.getElementById("container");
+console.log(container);
+
+var el = document.createElement("span");
+el.appendChild(document.createTextNode("texto do span"));
+console.log(el);
+
+container.appendChild(el);
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Criando elementos com DOM (createElement) </title>
+</head>
+<body>
+
+    <h1 id="title"> Titulo Principal </h1>
+    <h2 class="subtitle"> Este é o segundo titulo</h2>
+
+    <p id="paragrafo"> Este é o paragráfo! <span>teste</span></p>
+
+    <ul id="lista">
+        <li class="item"> Item 1 </li>
+        <li class="item"> Item 2 </li>
+        <li class="item"> Item 3 </li>
+        <li class="item"> Item 4 </li>
+    </ul>
+    <ul id="lista2">
+        <li class="item"> Item 5 </li>
+        <li class="item"> Item 6 </li>
+        <li class="item"> Item 7 </li>
+        <li class="item"> Item 8 </li>
+    </ul>
+
+    <div id="container"></div>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+

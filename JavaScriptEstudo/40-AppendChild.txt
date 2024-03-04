@@ -1,0 +1,61 @@
+Inserindo elementos (appendChild e insertBefore)
+
+- Podemos inserir um elemento dentro de outro, por exemplo um parágrafo em uma div.
+- Isso é considerado como "acrescentar um filho" em JS.
+- Vamos ver na prática!
+
+
+// criar elemento
+var el = document.createElement("div");
+el.classList = "div-criada";
+console.log(el);
+
+// inserindo elemento fiho
+var container = document.querySelector("#container");
+container.appendChild(el);
+
+// iserBefore - insere antes
+var el2 = document.createElement("div");
+el2.classList = "div-before";
+
+var el3 = document.querySelector("#container .div-criada");
+console.log(el3);
+
+container.insertBefore(el2, el3);
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inserindo elementos (appendChild e insertBefore) </title>
+</head>
+<body>
+
+    <h1 id="title"> Titulo Principal </h1>
+    <h2 class="subtitle"> Este é o segundo titulo</h2>
+
+    <p id="paragrafo"> Este é o paragráfo! <span>teste</span></p>
+
+    <ul id="lista">
+        <li class="item"> Item 1 </li>
+        <li class="item"> Item 2 </li>
+        <li class="item"> Item 3 </li>
+        <li class="item"> Item 4 </li>
+    </ul>
+    <ul id="lista2">
+        <li class="item"> Item 5 </li>
+        <li class="item"> Item 6 </li>
+        <li class="item"> Item 7 </li>
+        <li class="item"> Item 8 </li>
+    </ul>
+
+    <div id="container">
+        <p>Testando</p>
+    </div>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

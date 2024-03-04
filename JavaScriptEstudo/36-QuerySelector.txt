@@ -1,0 +1,66 @@
+querySelector e querySelectorAll
+
+Outras formas d eacessar o DOM
+
+- Com a evolucao das linguagens foram criados dois seletores que acabaram com toda a complexidade desta acao.
+- querySelector e querySelectorAll.
+- Com eles podemos acessar os elementos baseados em regras de Css.
+- Vamos ver na prática!
+
+
+// querySelector e querySelectorAll
+var itensClasse = document.getElementsByClassName("item");
+console.log(itensClasse);
+
+
+// querySelectorAll - pega varios elementos
+var itensQuery = document.querySelectorAll("#lista2 li");
+console.log(itensQuery);
+
+var itensQuery2 = document.querySelectorAll("#lista .item");
+console.log(itensQuery2);
+
+//querySelector - pega um elemento
+var lista = document.querySelector("#lista");
+console.log(lista);
+
+var primeiraLista = document.querySelector("ul");
+console.log(primeiraLista);
+
+var span = document.querySelector("#paragrafo span");
+console.log(span);
+var span = document.querySelectorAll("#paragrafo span")[0];
+console.log(span);
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> querySelector e querySelectorAll </title>
+</head>
+<body>
+
+    <h1> Titulo Principal </h1>
+    <p id="paragrafo"> Este é o paragráfo! <span>teste</span></p>
+
+    <ul id="lista">
+        <li class="item"> Item 1 </li>
+        <li class="item"> Item 2 </li>
+        <li class="item"> Item 3 </li>
+        <li class="item"> Item 4 </li>
+    </ul>
+    <ul id="lista2">
+        <li class="item"> Item 5 </li>
+        <li class="item"> Item 6 </li>
+        <li class="item"> Item 7 </li>
+        <li class="item"> Item 8 </li>
+    </ul>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+

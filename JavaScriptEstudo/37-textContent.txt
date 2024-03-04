@@ -1,0 +1,57 @@
+Alterar conteúdo do elemento (textContent e innerHTML)
+
+- Podemos alterar o texto de qualquer elemento de forma fácil com JavaScript.
+- Posteriormente poderemos atrelar esta acao com algum evento.
+- Vamos ver na prática!
+
+
+// innerHTML
+var title = document.querySelector("#title");
+console.log(title);
+
+title.innerHTML = "Testando o texto alterado!"
+
+
+// textContent
+var subtitle = document.querySelector(".subtitle");
+console.log(subtitle);
+
+subtitle.textContent = "Testando o textContent.";
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alterar conteúdo do elemento (textContent e innerHTML) </title>
+</head>
+<body>
+
+    <h1 id="title"> Titulo Principal </h1>
+    <h2 class="subtitle"> Este é o segundo titulo</h2>
+
+    <p id="paragrafo"> Este é o paragráfo! <span>teste</span></p>
+
+    <ul id="lista">
+        <li class="item"> Item 1 </li>
+        <li class="item"> Item 2 </li>
+        <li class="item"> Item 3 </li>
+        <li class="item"> Item 4 </li>
+    </ul>
+    <ul id="lista2">
+        <li class="item"> Item 5 </li>
+        <li class="item"> Item 6 </li>
+        <li class="item"> Item 7 </li>
+        <li class="item"> Item 8 </li>
+    </ul>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+
+

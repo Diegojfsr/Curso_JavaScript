@@ -1,0 +1,56 @@
+Acessando elementos através do DOM
+
+- Acessar o DOM caracteriza-se por identificar um elemento do HTML através de métodos.
+- Depois podemos manipulá-los da forma que quisermos.
+- Acessar o DOM é semelhante as regras do Css.
+- Podemos acessar por : tags, ids, classes.
+- Vamos ver na prática!
+
+
+// tag
+var titulo = document.getElementsByTagName("h1")[0];
+console.log(titulo);
+
+var lis = document.getElementsByTagName("li");
+console.log(lis);
+
+// id
+var paragrafo = document.getElementById("paragrafo");
+console.log(paragrafo);
+
+// class
+var itensDaLista = document.getElementsByClassName("item");
+console.log(itensDaLista);
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Acessando elementos através do DOM </title>
+</head>
+<body>
+
+    <h1> Titulo Principal </h1>
+    <p id="paragrafo"> Este é o paragráfo. </p>
+
+    <ul id="lista">
+        <li class="item"> Item 1 </li>
+        <li class="item"> Item 2 </li>
+        <li class="item"> Item 3 </li>
+        <li class="item"> Item 4 </li>
+    </ul>
+
+    <ul id="lista2">
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>
+        <li> Item 4 </li>
+    </ul>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+Propriedades do document
+
+- O objeto document não tem somente métodos.
+- Podemos retirar várias informações importantes das suas propriedades também.
+- Vamos ver na prática!
+
+
+console.log(document.body); // exibe a tag body
+console.log(document.head); // exibe a tag head
+
+console.log(document.links[0]); // altera a tag link
+document.links[0].textContent = "Twitter";
+
+console.log(document.URL); // puxa o endereço url
+console.log(document.title);
+
+document.title = "Aula 42"; // autera o titulo da pagina
+console.log(document.title);
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Propriedades do document </title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <h1 id="title"> Titulo Principal </h1>
+    <h2 class="subtitle"> Este é o segundo titulo</h2>
+
+    <p id="paragrafo"> Este é o paragráfo! <span>teste</span></p>
+
+    <ul id="lista">
+        <li class="item"> Item 1 </li>
+        <li class="item"> Item 2 </li>
+        <li class="item"> Item 3 </li>
+        <li class="item"> Item 4 </li>
+    </ul>
+    <ul id="lista2">
+        <li class="item"> Item 5 </li>
+        <li class="item"> Item 6 </li>
+        <li class="item"> Item 7 </li>
+        <li class="item"> Item 8 </li>
+    </ul>
+
+    <div id="container">
+        <p>Testando</p>
+        <button id="btn">Teste</button>
+    </div>
+
+    <div>
+        <a href="#">Google</a>
+    </div>
+    <div>
+        <a href="#">Facebook</a>
+    </div>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+// css
+
+h1 {
+    color: purple;
+}
+
+
+
+
+
+

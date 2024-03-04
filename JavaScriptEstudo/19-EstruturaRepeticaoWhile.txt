@@ -1,0 +1,32 @@
+Estruturas de Repetição
+
+- Essas estruturas servem para repetir n vezes uma operação.
+- Exemplo: Repetir uma determinada lógica em cada elemento do array.
+- As estruturas mais comuns são: while e for.
+- Observação: Tomar cuidado com o loop infinito.
+
+
+Estrutura de repetição while
+
+
+var x = 0;
+while(x < 5){
+    console.log("Testando repetição " + x);
+    x++; // Incrementador
+}
+
+var arr = ["teste1", "teste2", "a", "b"];
+var y = 0;
+while(y <= 3){
+    console.log(arr[y]);
+    y++;
+}
+
+
+var palavra = "Mateus";
+var i = 0;
+while(i <= 6){
+    console.log(palavra[i]);
+    i++;
+}
+
